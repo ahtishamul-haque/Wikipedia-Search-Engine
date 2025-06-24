@@ -5,7 +5,6 @@ A full-stack web application that allows users to search Wikipedia articles usin
 ## Project Structure
 
 ```
-/
 ├── backend/          # Express.js backend
 │   └── index.js
 ├── frontend/         # React frontend built with Vite
