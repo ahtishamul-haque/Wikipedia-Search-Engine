@@ -80,7 +80,7 @@ npm start --prefix backend
 - Render (for deployment)
 
 ## Live Demo
-🔗 [View Live Site]([https://major-project-trip-mate.onrender.com/listings](https://project-wikipedia.onrender.com/))
+🔗 [View Live Site](https://project-wikipedia.onrender.com/)
 
 
 ## License
