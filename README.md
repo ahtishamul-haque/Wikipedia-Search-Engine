@@ -19,32 +19,6 @@ A full-stack web application that allows users to search Wikipedia articles usin
 - Express backend handles API proxying
 - Unified deployment on a single server (e.g. Render)
 
-## Local Development
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/ahtishamul-haque/wikipedia-search-engine.git
-cd wikipedia-search-engine
-```
-
-### 2. Install Dependencies
-
-```bash
-npm install
-npm install --prefix frontend
-npm install --prefix backend
-```
-
-### 3. Run the Project (Frontend + Backend)
-
-```bash
-npm run dev
-```
-
-- Frontend available at: http://localhost:8080
-- API available at: http://localhost:8080/search?q=your-query
-
 ## Building for Production
 
 ```bash
@@ -55,20 +29,6 @@ This will:
 - Install frontend and backend dependencies
 - Build the frontend using Vite (output goes to `frontend/build`)
 - Backend serves the built frontend along with API
-
-## Deployment (Render)
-
-**Build Command:**
-
-```
-npm install && npm run build
-```
-
-**Start Command:**
-
-```
-npm start --prefix backend
-```
 
 ## Tech Stack
 
