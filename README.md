@@ -5,11 +5,11 @@ A full-stack web application that allows users to search Wikipedia articles usin
 ## Project Structure
 
 ```
-├── backend/          # Express.js backend
+├── backend/          #Express.js backend
 │   └── index.js
-├── frontend/         # React frontend built with Vite
+├── frontend/         #React frontend built with Vite
 │   └── vite.config.js
-├── package.json      # Root scripts and combined dev setup
+├── package.json      #Root scripts and combined dev setup
 ```
 
 ## Features
@@ -24,7 +24,7 @@ A full-stack web application that allows users to search Wikipedia articles usin
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/wikipedia-search-engine.git
+git clone https://github.com/ahtishamul-haque/wikipedia-search-engine.git
 cd wikipedia-search-engine
 ```
 
@@ -58,8 +58,6 @@ This will:
 
 ## Deployment (Render)
 
-Create a single **Web Service** on [Render.com](https://render.com) with the following settings:
-
 **Build Command:**
 
 ```
@@ -72,29 +70,6 @@ npm install && npm run build
 npm start --prefix backend
 ```
 
-**Root Directory:** Leave it blank (points to the root of the repo)
-
-The backend will automatically serve the frontend from `frontend/build`.
-
-## API Example
-
-```
-GET /search?q=tesla
-```
-
-Returns Wikipedia search results in JSON format.
-
-## Scripts Overview
-
-Root `package.json` includes:
-
-```json
-"scripts": {
-  "dev": "concurrently \"npm run dev --prefix frontend\" \"npm start --prefix backend\"",
-  "build": "npm install --prefix frontend && npm install --prefix backend && npm run build --prefix frontend"
-}
-```
-
 ## Tech Stack
 
 - React 19
@@ -104,6 +79,9 @@ Root `package.json` includes:
 - Wikipedia API
 - Render (for deployment)
 
-## License
+## Live Demo
+🔗 [View Live Site]([https://major-project-trip-mate.onrender.com/listings](https://project-wikipedia.onrender.com/))
 
-MIT © 2025 Your Name
+
+## License
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).
