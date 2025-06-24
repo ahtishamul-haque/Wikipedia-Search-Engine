@@ -1,8 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
+const path = require('path');
+
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 
@@ -23,12 +25,18 @@ app.get('/search', async (req, res) => {
 
     const results = response.data.query.search;
     res.json(results);
-  } 
-  catch (error) {
+  } catch (error) {
     res.status(500).json({ error: 'Wikipedia fetch failed' });
   }
 });
 
+
+app.use(express.static(path.join(__dirname, '../frontend/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
+});
+
 app.listen(PORT, () => {
-  console.log("server is listening to port 8080");
+  console.log(`Server is listening on port ${PORT}`);
 });
