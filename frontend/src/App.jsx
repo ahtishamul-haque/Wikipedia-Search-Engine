@@ -23,7 +23,8 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1 className="title">Wikipedia Search Engine</h1>
+        <h1 className="title">Wikipedia&nbsp;</h1>
+        <h1 className="title title-b">Search Engine</h1>
       </header>
 
       <div className="search-box">
