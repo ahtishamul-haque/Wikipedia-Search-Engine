@@ -166,3 +166,14 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* Responsive Media Query */
+@media (max-width: 767px) {
+  .header {
+    display: block;
+  }
+
+  .title-b {
+    margin-top: 0;
+  }
+}
